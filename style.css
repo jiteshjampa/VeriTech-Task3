@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #9d50bb, #6e48aa);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: auto;
+  background-color: rgb(189, 9, 180);
+  color: white;
+}
+.container h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+ul {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+.container #taskInput {
+  width: 70%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.addbtn {
+  border: none;
+  background-color: transparent;
+}
+.addbtn img {
+  width: 40px;
+  height: 40px;
+  transition: scale 1s;
+}
+.addbtn img:hover {
+  scale: 0.8;
+}
+.del,
+.edit {
+  border: none;
+  background-color: transparent;
+}
+.del img,
+.edit img {
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+}
+.del :hover {
+  background-color: red;
+  border-radius: 8px;
+}
+.edit :hover {
+  background-color: #00bfff;
+  border-radius: 8px;
+}
+#taskList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+#taskList li {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  align-items: center;
+}
+#taskList li button {
+  margin: 15px;
+}
+
+#taskList li input[type="checkbox"] {
+  margin: 15px;
+}
+.todo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#taskList li {
+  display: flex;
+  justify-content: space-between; /* Change to space-between */
+  margin: 10px;
+  align-items: center; /* Align items to start */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+#taskList li p {
+  width: 200px; /* Set paragraph text width to 200px */
+  overflow-wrap: break-word; /* Ensure long words break and wrap onto the next line */
+}
+
+#taskList li .todo {
+  display: flex;
+  align-items: flex-end; /* Align buttons to the flex-end position */
+  justify-content: space-evenly; /* Space items evenly */
+  /* Ensure buttons take full width */
+}
